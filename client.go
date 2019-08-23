@@ -376,6 +376,21 @@ func (c *Client) NewCloseUserStreamService() *CloseUserStreamService {
 	return &CloseUserStreamService{c: c}
 }
 
+// NewStartMarginUserStreamService init starting user stream service
+func (c *Client) NewStartMarginUserStreamService() *StartMarginUserStreamService {
+	return &StartMarginUserStreamService{c: c}
+}
+
+// NewKeepaliveMarginUserStreamService init keep alive user stream service
+func (c *Client) NewKeepaliveMarginUserStreamService() *KeepaliveMarginUserStreamService {
+	return &KeepaliveMarginUserStreamService{c: c}
+}
+
+// NewCloseMarginUserStreamService init closing user stream service
+func (c *Client) NewCloseMarginUserStreamService() *CloseMarginUserStreamService {
+	return &CloseMarginUserStreamService{c: c}
+}
+
 // NewExchangeInfoService init exchange info service
 func (c *Client) NewExchangeInfoService() *ExchangeInfoService {
 	return &ExchangeInfoService{c: c}
